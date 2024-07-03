@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Slack Thread Timestamp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Extract Slack Thread Timestamp 🕒</h1>
+        <p>Follow the guide below to obtain the <code>thread_ts</code> from a Slack URL:</p>
+        <ol>
+            <li>Open your Slack workspace in a browser.</li>
+            <li>Navigate to the channel containing the thread you are interested in.</li>
+            <li>Click on the timestamp of the thread's first message to open it in a new view.</li>
+            <li>Copy the URL from the address bar. It should look something like: <code>https://hackclub.slack.com/archives/C017YL1NMU0/p1719964952242809?thread_ts=1719963360.956289&cid=C017YL1NMU0</code></li>
+        </ol>
+        <form id="slack-url-form">
+            <label for="slack-url">Enter the Slack URL:</label>
+            <input type="text" id="slack-url" name="slack-url" placeholder="https://your-slack-url" required>
+            <button type="submit">Get Thread Timestamp</button>
+        </form>
+        <div id="result"></div>
+        <footer>
+            Made with ❤️ by Arnav
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
